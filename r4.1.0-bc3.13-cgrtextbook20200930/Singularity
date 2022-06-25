@@ -21,6 +21,7 @@ From: jupyter/r-notebook:r-4.1.0
   R -e 'install.packages("docopt")' && \
   R -e 'install.packages("ggpubr")' && \
   R -e 'install.packages("ggplotify")' && \
+  R -e 'install.packages("gprofiler2")' && \
   R -e 'install.packages("ggrepel")' && \
   R -e 'install.packages("ggedit")' && \
   R -e 'install.packages("ggcorrplot")' && \
@@ -33,7 +34,7 @@ From: jupyter/r-notebook:r-4.1.0
   conda install -q -y -c bioconda r-enrichr \
     bioconductor-complexheatmap && \
   conda clean -a -q -f -y && \
-  R -e 'BiocManager::install(c("qvalue", "plot3D", "pheatmap", "cowplot", "cluster", "NbClust", "fastICA", "NMF", "matrixStats", "Rtsne", "mosaic", "knitr", "genomation", "ggbio", "Gviz", "DESeq2", "RUVSeq", "gProfileR", "ggfortify", "corrplot", "gage", "EDASeq", "citr", "svglite", "Rqc", "ShortRead", "QuasR", "methylKit", "FactoMineR", "iClusterPlus", "caret", "xgboost", "glmnet", "DALEX", "kernlab", "pROC", "nnet", "RANN", "ranger", "GenomeInfoDb", "GenomicRanges", "GenomicAlignments", "circlize", "rtracklayer", "BSgenome.Hsapiens.UCSC.hg38", "BSgenome.Hsapiens.UCSC.hg19", "AnnotationHub", "GenomicFeatures", "normr", "MotifDb", "TFBSTools", "rGADEM", "JASPAR2018"), force = TRUE)' && \
+  R -e 'BiocManager::install(c("qvalue", "plot3D", "pheatmap", "cowplot", "cluster", "NbClust", "fastICA", "NMF", "matrixStats", "Rtsne", "mosaic", "knitr", "genomation", "ggbio", "Gviz", "DESeq2", "RUVSeq", "ggfortify", "corrplot", "gage", "EDASeq", "citr", "svglite", "Rqc", "ShortRead", "QuasR", "methylKit", "FactoMineR", "iClusterPlus", "caret", "xgboost", "glmnet", "DALEX", "kernlab", "pROC", "nnet", "RANN", "ranger", "GenomeInfoDb", "GenomicRanges", "GenomicAlignments", "circlize", "rtracklayer", "BSgenome.Hsapiens.UCSC.hg38", "BSgenome.Hsapiens.UCSC.hg19", "AnnotationHub", "GenomicFeatures", "normr", "MotifDb", "TFBSTools", "rGADEM", "JASPAR2018"), force = TRUE)' && \
   R -e 'install.packages("devtools")' && \
   R -e 'devtools::install_github("compgenomr/compGenomRData")'
 
